@@ -12,6 +12,10 @@ app.use(cors());
 //connection
 connectMongoDb();
 
+app.get('/try', (req, res) => {
+    res.send("GET Request Called")
+})
+
 
 
 app.listen(process.env.PORT, () => console.log("app is running"));
